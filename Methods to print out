@@ -20,3 +20,31 @@ class HelloWorld {
     String name;
     int age;
     }
+// With constructor
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online  
+
+class HelloWorld {
+
+    static void studentPrint(Student object){
+        System.out.println("Student: " + object.name + ", Age: " + object.age);
+    }
+    
+    
+    public static void main(String[] args) {
+
+
+      //  Student S = new Student();
+        Student SS = new Student("Sam", 10);
+        studentPrint (SS);
+    }
+}
+    class Student{
+    String name;
+    int age;
+    public Student(String n, int a){
+        name = n;
+        age = a;
+    }
+    }
