@@ -1,0 +1,40 @@
+import java.util.Arrays;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+      int [] ML;
+      ML = new int[] {6,8,2,1,9};
+      int s;
+      int l;
+      
+      for (int i = 0; i< ML.length ; i++){
+          for(int j =0; j< ML.length; j++){
+              s = ML[i];
+              l = ML[j];
+              if(s<l){
+                    int temp = ML[i];
+                     ML[i] = ML[j];
+                     ML[j] = temp;
+              }
+          }
+      }
+        System.out.println(java.util.Arrays.toString(ML));
+        
+        // decending 
+        
+      for (int i = 0; i< ML.length ; i++){
+          for(int j =0; j< ML.length; j++){
+              s = ML[i];
+              l = ML[j];
+              if(s>l){
+                    int temp = ML[i];
+                     ML[i] = ML[j];
+                     ML[j] = temp;
+              }
+          }
+      }
+        System.out.println(java.util.Arrays.toString(ML));
+    }
+}
