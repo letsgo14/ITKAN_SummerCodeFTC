@@ -1,0 +1,24 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online  
+
+import java.util.Scanner;
+
+class HelloWorld {
+
+    static void studentPrint(Student object){
+        System.out.println("Student: " + object.name + ", Age: " + object.age);
+    }
+
+    public static void main(String[] args) {
+
+
+        Student S = new Student();
+        S.name = "Sam";
+        S.age = 10;
+        studentPrint (S);
+    }
+}
+    class Student{
+    String name;
+    int age;
+    }
