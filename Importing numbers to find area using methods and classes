@@ -1,0 +1,37 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+
+class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Print leangth, press enter, then enter width: ");
+        Scanner Console = new Scanner(System.in);
+        double l = Console.nextDouble();
+        double w = Console.nextDouble();
+        
+        rectangle r = new rectangle();
+          r.setLength(l);
+         r.setWidth(w);
+        double newArea= r.area();
+        System.out.println(newArea);
+        
+    }
+}
+class rectangle{
+    
+    double length;
+    double width;
+    double area;
+    public void setLength(double l){
+        length = l;
+    }
+    public void setWidth(double w){
+        width = w;
+    }
+    public double area(){
+        area =length*width;
+        return area;
+        
+    }
+}
